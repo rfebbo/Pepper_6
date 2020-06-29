@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.google.cloud:google-cloud-dialogflow:0.92.0-alpha'
+    implementation 'com.google.http-client:google-http-client:1.29.1'
+    implementation 'junit:junit:4.12'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

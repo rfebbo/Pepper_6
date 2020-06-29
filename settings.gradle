@@ -1,0 +1,3 @@
+include ':data'
+include ':app'
+rootProject.name = "Pepper_6"
